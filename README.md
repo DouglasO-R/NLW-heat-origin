@@ -1,0 +1,1 @@
+Repositorios para as aulas do curso Discovery da Rocketseat
