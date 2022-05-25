@@ -17,12 +17,12 @@
                 <span>
                     <img src="src/images/build.svg" alt="Selo Rocketseat">
                 </span>
-                
+
                 <img src="images/" alt="Imagem de perfil">
             </div>
 
             <h1>Douglas Oliveira</h1>
-            <a href="http://">
+            <a href="http://github.com/douglasor" target="_blank">
                 <img src="src/images/github.svg" alt="" srcset="">
                 github
             </a>
@@ -32,30 +32,55 @@
                 tempora dicta. Ut perferendis veniam ea quia, est facilis enim laboriosam natus magni atque commodi!
             </p>
 
-            <ul>
-                <li>
+            <ul id="social-links">
+                <li class="youtube">
                     <a href="https://youtube.com/douglas" target="_blank">
                         <img src="src/images/youtube.svg" alt="">
                     </a>
                 </li>
-                <li>
+
+                <li class="facebook">
                     <a href="https://facebook.com/douglas" target="_blank">
                         <img src="src/images/facebook.svg" alt="">
                     </a>
                 </li>
-                <li>
+
+                <li class="instagram">
                     <a href="https://instagram.com/douglas" target="_blank">
                         <img src="src/images/instagram.svg" alt="">
                     </a>
                 </li>
-                <li>
+
+                <li class="twitter">
                     <a href="https://twitter.com/douglas" target="_blank">
                         <img src="src/images/twitter.svg" alt="">
                     </a>
                 </li>
+
             </ul>
         </div>
     </main>
+    <script>
+        const socialLinks = document.getElementById('social-links');
+        const linksSocialMedia = {
+            github: "douglasor",
+            youtube: "douglasor",
+            facebook: "douglasor",
+            twitter: "douglasor",
+            instagram: "douglasor",
+        }
+
+        function changeSocialMedia() {
+            for (let li of socialLinks.children) {
+                let social = li.getAttribute("class");
+                li.children[0].href = ` https://${social}.com/${linksSocialMedia[social]} `;
+                console.log(li.children[0].href = ` https://${social}.com/${linksSocialMedia[social]} `);
+            }
+        }
+
+        changeSocialMedia();
+
+    </script>
 </body>
 
 </html>
