@@ -15,9 +15,10 @@ body{
 }
 
 main{
-    background: url(images/background.svg);
-    width: 375px;
-    height: 812px;
+    background: url(images/background.svg) no-repeat center/cover;
+    width: 100vw;
+    min-height: 812px;
+    height: 100vh;
 }
 
 .container{
@@ -79,3 +80,25 @@ ul{
 
     justify-content: center;
 }
+
+@media (min-width: 720px) {
+    body {
+      background: var(--black) url(images/Desktop.svg) no-repeat center/cover;
+    }
+    main {
+      background: url(images/cracha.svg) no-repeat center/cover;
+      width: 25rem;
+      min-height: 0px;
+      height: auto;
+      margin: 0 0 15px;
+      transition: 0.3s;
+    }
+    
+    .avatar {
+      margin: 17rem auto 0;
+    }
+  
+    ul {
+      margin: 3rem 0;
+    }
+  }
