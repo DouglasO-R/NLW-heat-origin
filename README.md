@@ -1,1 +1,3 @@
-Repositorios para as aulas do curso Discovery da Rocketseat
+ ## Projeto de estudo front-end
+
+ cracha virtual criado na trilha origin NLW Heat

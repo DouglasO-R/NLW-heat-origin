@@ -18,15 +18,15 @@
                     <img src="src/images/build.svg" alt="Selo Rocketseat">
                 </span>
 
-                <img src="images/" alt="Imagem de perfil">
+                <img id="user-image" src="https://images.unsplash.com/photo-1582415892501-9d50fafdbd9f?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470" alt="Imagem de perfil">
             </div>
 
-            <h1>Douglas Oliveira</h1>
-            <a href="http://github.com/douglasor" target="_blank">
+            <h1 id="user-name">Douglas Oliveira</h1>
+            <a id="user-link" href="http://github.com/douglasor" target="_blank">
                 <img src="src/images/github.svg" alt="" srcset="">
-                github
+                <span id="user-login">github</span>
             </a>
-            <p>
+            <p id="user-bio">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, voluptate quo necessitatibus eaque
                 saepe dignissimos
                 tempora dicta. Ut perferendis veniam ea quia, est facilis enim laboriosam natus magni atque commodi!
@@ -60,25 +60,8 @@
             </ul>
         </div>
     </main>
-    <script>
-        const socialLinks = document.getElementById('social-links');
-        const linksSocialMedia = {
-            github: "douglasor",
-            youtube: "douglasor",
-            facebook: "douglasor",
-            twitter: "douglasor",
-            instagram: "douglasor",
-        }
-
-        function changeSocialMedia() {
-            for (let li of socialLinks.children) {
-                let social = li.getAttribute("class");
-                li.children[0].href = ` https://${social}.com/${linksSocialMedia[social]} `;
-                console.log(li.children[0].href = ` https://${social}.com/${linksSocialMedia[social]} `);
-            }
-        }
-
-        changeSocialMedia();
+    <script src="src/main.js">
+       
 
     </script>
 </body>
